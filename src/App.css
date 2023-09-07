@@ -1,0 +1,113 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+* {
+  cursor: default;
+}
+
+.main-nav {
+  display: flex;
+  padding: 0 2em;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: linear-gradient(#555, #222);
+}
+.main-nav p {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-right: 5em;
+  color: #e0daf7;
+  opacity: 0.9;
+}
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10em;
+  padding-inline: 2em;
+  list-style: none;
+}
+.main-nav ul li {
+  opacity: 0.8;
+  transition: 250ms ease;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+}
+.main-nav ul li a {
+  cursor: pointer;
+  padding: 0.2rem;
+  color:aquamarine;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.main-nav ul li:hover {
+  opacity: 1;
+  scale: 1.1;
+}
+
+.login-form-container {
+  background: linear-gradient(rgb(127, 255, 212, 0.8) 29%, #555 30%);
+  padding: 1em 3em 2em 3em;
+  border: 0.5px solid rgb(127, 255, 212, 0.8);
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+.login-form-container h3 {
+  color: #222;
+  font-size: 1.5rem;
+}
+.login-form {
+  display: grid;
+  text-align: left;
+}
+.login-form label {
+  font-style: italic;
+  padding-bottom: 0.3em;
+  padding-top: 0.7em;
+  color: rgb(127, 255, 212, 0.6);
+}
+.login-form input {
+  padding: 0.5rem;
+  opacity: 0.8;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+  transition: 250ms ease;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -ms-transition: 250ms ease;
+  -o-transition: 250ms ease;
+}
+.login-form input:hover,
+.login-form input:hover label {
+  opacity: 1;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Project Links :  */
+/* https://youtu.be/kH5Hfr68iMg */
+/* https://github.com/cavemutt/week13-React-Vite-intro.git */
